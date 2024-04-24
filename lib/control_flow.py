@@ -19,10 +19,19 @@ def hows_the_weather(temperature):
     else:
         return "It's perfect out there!"
 
+# Write a function fizzbuzz() takes in a number. For multiples of three, return "Fizz" instead of the number. For the multiples of five, return "Buzz". For numbers which are multiples of both three and five, return "FizzBuzz". For all other numbers, just return the number itself.
 def fizzbuzz(num):
-    # your code here
-    pass
+    if num % 3 == 0 and num % 5 == 0:
+        return "FizzBuzz"
+    elif num % 3 == 0:
+        return "Fizz"
+    elif num % 5 == 0:
+        return "Buzz"
+    else:
+        return num
 
+
+
+# Write a function calculator() that takes three arguments: an operation and two numbers. If the operation is one of the following: +, -, *, or /, return the value of calling the operation on the two numbers. Otherwise, output a message saying "Invalid operation!" and return None.
 def calculator(operation, num1, num2):
-    # your code here
     pass
