@@ -10,7 +10,14 @@ def admin_login(username, password):
 
 # Write a function hows_the_weather() that takes in one argument, a temperature. If the temperature is below 40, return "It's brisk out there!". If the temperature is between 40 and 65, return "It's a little chilly out there!". If the temperature is above 85, return "It's too dang hot out there!". Otherwise, return "It's perfect out there!"
 def hows_the_weather(temperature):
-    pass
+    if temperature < 40:
+        return "It's brisk out there!"
+    elif temperature > 40 and temperature <65:
+        return "It's a little chilly out there!"
+    elif temperature > 85:
+        return "It's too dang hot out there!"
+    else:
+        return "It's perfect out there!"
 
 def fizzbuzz(num):
     # your code here
