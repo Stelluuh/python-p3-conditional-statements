@@ -34,4 +34,14 @@ def fizzbuzz(num):
 
 # Write a function calculator() that takes three arguments: an operation and two numbers. If the operation is one of the following: +, -, *, or /, return the value of calling the operation on the two numbers. Otherwise, output a message saying "Invalid operation!" and return None.
 def calculator(operation, num1, num2):
-    pass
+    if operation == "+":
+        return num1 + num2
+    elif operation == "-":
+        return num1 - num2
+    elif operation == "*":
+        return num1 * num2
+    elif operation == "/":
+        return num1 / num2
+    else:
+        print("Invalid operation!")
+        return None
